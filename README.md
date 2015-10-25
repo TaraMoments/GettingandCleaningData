@@ -8,7 +8,7 @@
  4. README.md (current file)  
  
 ## About run\_analysis.R
-This file run\_analysis.R is the R script that merges train and test data sets of human activity recognition using smartphones. To make sure this R script runs properly, the Samsung data need to be in the working directory. The output is the tidy data set requested by the course project of Getting and Cleaning Data. 
+This file run\_analysis.R is the R script that merges train and test data sets of human activity recognition using smartphones. To make sure this R script runs properly, the Samsung data need to be in the working directory. The output is the tidy data set requested by the course project of Getting and Cleaning Data, which is stored by  human\_activity\_recognition\_using\_smartphones.txt. 
 
 ## About human\_activity\_recognition\_using\_smartphones.txt
 
