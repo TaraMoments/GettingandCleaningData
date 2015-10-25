@@ -1,4 +1,4 @@
-This file describes exact steps performed on the raw Samsung data to get the tidy data set stored by human\_activity\_recognition\_using\_smartphones.txt. It also describes the variables in the tiday data set. 
+This file describes exact steps performed on the raw Samsung data to get the tidy data set stored by human\_activity\_recognition\_using\_smartphones.txt. It also describes the variables in the tiday data set and provides the source for the raw Samsung data. 
 
 ## Exact steps from raw data to the tidy data in R
 1. Read data from subject\_test.txt 
