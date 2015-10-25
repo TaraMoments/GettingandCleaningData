@@ -9,13 +9,15 @@ This file describes exact steps performed on the raw Samsung data to get the tid
 5. Merge the train\_data and test\_data by cbind(). Store the resulted data as dat
 6. Read data from features.txt, and get the list of measurement names. 
 7. Rename the columns of dat to be "subject", "activity" and the list of measurement names provided by the data from features.txt. 
-8. Subsetting dat by extracting the columns "subject", "activity" and only the measurements on the mean and standard deviation for each measurement.
+8. Subsetting dat by extracting the columns "subject", "activity" and only the measurements of the mean and the standard deviation for each measurement.
 9. Read data from activity_labels.txt and obtain more descriptive activity names.
-10. Re-level the activity column of dat from 1 to 6 to the more descriptive activity names. 
+10. Re-level the activity column of dat from 1 to 6 to the more descriptive activity names (e.g. Walking). 
 11. Create a second data set by only including "subject", "activity", and the mean of each variable for each subject and each activity.
 
 ## Code book 
 ### Variables 
+The tidy data set has 180 rows and 68 variables. 
+
 * subject (integer): subject who performed the activity for each window sample. It ranges from 1 to 30.
 * activity (factor with 6 levels): the activities performed by subjects. Each person performed six activities. 
    * WALKING
@@ -25,7 +27,7 @@ This file describes exact steps performed on the raw Samsung data to get the tid
    * STANDING
    * LAYING.  
    
-* The following variabes are the means of measurements for each subject and each activity. Some of the variables have the pattern '-XYZ', which is used to denote 3-axial signals in the X, Y and Z directions. 
+* The following 66 variabes are the *means* of the mean and the standard deviation of the raw data measurements for each subject and each activity. Some of the variables have the pattern '-XYZ', which is used to denote 3-axial signals in the X, Y and Z directions. A full description about the mean and the standard deviation of the raw data measurements can be found [here](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip). 
 
  3. tBodyAcc-mean()-XYZ (numumerical)
  6. tBodyAcc-std()-XYZ (numumerical)
@@ -62,8 +64,10 @@ This file describes exact steps performed on the raw Samsung data to get the tid
  27. fBodyBodyGyroJerkMag-mean() (numumerical)
  28. fBodyBodyGyroJerkMag-std() (numumerical)
 
+ ## Source for the raw Samsung data
+ A full description about the raw Samsung data is available at the [UCI Marchine Learning Repository](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones) where the data was obtained. The raw Samsung data can be download [here](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip). 
  
-
+ 
 
  
 
